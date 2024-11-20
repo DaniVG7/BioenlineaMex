@@ -609,7 +609,8 @@
             background-color: rgba(8, 93, 20, 0.7);
             border-radius: 20px;
             color: white;
-            padding: 30px;
+            padding: 20px;
+            text-align: center;
             h2{
                 font-size: 27px;
                 
