@@ -1,10 +1,11 @@
-
+  html{
+    max-width: 1400px;
+    margin: 0 auto;
+  }
     body {
         margin: 0;
         padding: 0;
         font-family: Arial, sans-serif;
-        max-width: 1200px;
-        margin:0 auto;
     }
 
     section.navigation-bar {
@@ -46,7 +47,8 @@
     .product-grid {
         display: grid;
         grid-template-columns: repeat(3, 30%);
-        gap: 40px;
+        justify-content: space-between;
+        grid-gap: 50px;
     }
 
     div .product{
@@ -96,7 +98,6 @@
     /* Valoraciones*/
 
     .customer-reviews {
-        padding: 20px;
         margin-top: 20px;
         text-align: center;
     }
@@ -286,7 +287,7 @@
         background-color: #333;
         color: white;
         text-align: center;
-        max-width: 1200px;
+        max-width: 1500px;
         position: relative;
         height: 190px;
         display: grid;
@@ -320,8 +321,8 @@
         width: 70px;
         height: 70px;
         position: fixed;
-        right: 2%;
-        bottom: 2%;
+        right: 5%;
+        bottom: 5%;
     }
     .logo{
         width: 200px;
@@ -473,7 +474,6 @@
     }
 
     header {
-        display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 0 ;
@@ -495,12 +495,13 @@
         margin: 0 15px;
         padding: 30px;
         font-weight: bold;
-        transition:  0.5s; /* Tiempo de efecto de transición de color y tamaño al pasar el ratón */
+        transition:  2s; /* Tiempo de efecto de transición de color y tamaño al pasar el ratón */
     }
 
     nav a:hover {
-        color: #058b00; /* Color al pasar el ratón, cámbialo según veas */
-        font-size: 25px;  /* Tamaño al pasar el raton */
+        color: #81cb7f; /* Color al pasar el ratón, cámbialo según veas */
+        font-size: 15px;  /* Tamaño al pasar el raton */
+        text-decoration: underline;
     }
 
 
@@ -570,14 +571,14 @@
         }
         .vip-membership{
             width: 100%;
-            margin: 0;
             padding: 0;
             font-size: large;
         }
         .monthly-shipping{
             width: 100%;
-            margin: 0;
-            padding: 0;
+            padding: 10px;
+            margin: auto;
+            text-align: justify;
             font-size: large;
             font-weight: bold;
         }
@@ -601,16 +602,17 @@
             display: block;
             height: auto;
         }
+        .merchandising-section p{
+            font-size: 20px;
+        }
         .mask{
             background-color: rgba(8, 93, 20, 0.7);
             border-radius: 20px;
             color: white;
-            padding-bottom: 30px;
-            padding-top: 30px;
-            padding-left: 20px;
+            padding: 30px;
             h2{
-                font-size: 30px;
-                margin: 0;
+                font-size: 27px;
+                
             }
         }
         

@@ -4,11 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>BIOENLINEA</title>
 </head>
 <body>
     <header>
-        <div class="logoheader">
+        <nav
+            class="navbar navbar-expand-sm navbar-light bg-light"
+        >
+            <div class="container">
+                <div class="logoheader">
+                    <img src="imgs/Bioenlínea.png" alt="Logo de BIOENLINEA">
+                </div>
+                <button
+                    class="navbar-toggler d-lg-none"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId"
+                    aria-controls="collapsibleNavId"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                        <li class="nav-item me-4">
+                            <a class="nav-link active" href="#" aria-current="page"
+                                >Home
+                                <span class="visually-hidden">(current)</span></a
+                            >
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link" href="#">About us</a>
+                        </li>
+                        <li class="nav-item dropdown me-4">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                id="dropdownId"
+                                data-bs-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                                >Shop</a
+                            >
+                            <div
+                                class="dropdown-menu"
+                                aria-labelledby="dropdownId"
+                            >
+                                <a class="dropdown-item" href="#"
+                                    >Home products</a
+                                >
+                                <a class="dropdown-item" href="#"
+                                    >Car products</a
+                                >
+                            </div>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link" href="#">Contact us</a>
+                        </li>
+                    </ul>
+                    
+                    <form class="d-flex my-2 my-lg-0">
+                        <input
+                            class="form-control me-sm-2"
+                            type="text"
+                            placeholder="Search"
+                        />
+                        <button
+                            class="btn btn-outline-success my-2 my-sm-0"
+                            type="submit"
+                        >
+                            Search
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+           
+        
+        <!-- <div class="logoheader">
             <img src="imgs/Bioenlínea.png" alt="Logo de BIOENLINEA">
         </div>
         <div class="mobile-menu">
@@ -25,7 +100,7 @@
                     <a href="#">Contacto</a>
                 </nav>
             </div>
-        </div>
+        </div> -->
         
         
     </header>
@@ -45,7 +120,7 @@
     </section>
     <main>
         <section class="featured-products">
-            <h1 style="color: #8e43f0;">PRODUCTOS DESTACADOS</h1>
+            <h1 style="color: #8e43f0; font-weight:600;">PRODUCTOS DESTACADOS</h1>
             <div class="product-grid">
                 <!-- Aquí van los productos destacados -->
                 <div class="product">
@@ -87,13 +162,13 @@
 			</div>
             </div>
         </section>
-        <section class="vip">
+        <section class="vip mt-2">
         <div class="vip-membership">
             <h2>¿Quiere unirse a nuestro exclusivo grupo de clientes VIP?</h2>
             <button class="purple-button">Obtener membresía VIP</button>
         </div>
 
-        <div class="monthly-shipping">
+        <div class="monthly-shipping mt-2">
             <p>Mándenos sus datos y podrá agendar su envío de productos mensualmente. Escoja entre nuestra gama de productos, seleccione la cantidad deseada y elija el día que desea recibirlo en su hogar.</p>
         </div>
     </section>
@@ -128,7 +203,7 @@
             </div>
         </div>
     </section>
-    <section class="sustainable-section">
+    <section class="sustainable-section mt-2">
         <h2>¿Está interesado en tener un hogar limpio y sustentable?</h2>
         <p>Nuestros productos son 100% sustentables, respetamos siempre el medioambiente considerando el impacto en el cambio climático. Podemos cambiar nuestro planeta, podemos cambiar nuestro hogar.</p>
         <a href="#" class="purple-button">Ir a la tienda</a>
@@ -183,5 +258,7 @@
         });
 
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
